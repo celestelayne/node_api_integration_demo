@@ -2,7 +2,7 @@ var express = require('express'),
     app = express(),
     request = require('request');
 
-// REDDIT EXAMPLE
+// REDDIT FRONTPAGE AMA EXAMPLE
 app.get('/top_ama', function(req, res){
 
   console.log("Requesting data from reddit...")
@@ -35,7 +35,7 @@ app.get('/top_ama', function(req, res){
 
 })
 
-// GIPHY "proxy" EXAMPLE
+// GIPHY TOP GIF EXAMPLE
 app.get('/top_gif', function(req, res){
   
   console.log("Requesting data from giphy...")
