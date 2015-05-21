@@ -1,6 +1,11 @@
 # Simple API Integration Demo
 This demo integrates with Reddit ('/top_ama') and Giphy ('/top_gif').
 
+It answers the important questions:
+
+* What's the top gif on Giphy?
+* Is there an AMA on Reddit's front page?
+
 We'll be using the node "Request" library to handle external API requests
 
 * Documentation: https://github.com/request/request
@@ -16,7 +21,8 @@ We'll be using the node "Request" library to handle external API requests
 
 Ugh! That round trip could take awhile!
 
-Here are three patterns to consider:
+**Here are three patterns to consider:**
+
 * client-to-server-to-external-api-to-server-to-client
     - slow and redundant!
 * client-to-server-to-cache-to-client
