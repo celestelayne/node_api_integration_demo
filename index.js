@@ -3,7 +3,7 @@ var express = require('express'),
     request = require('request');
 
 // REDDIT EXAMPLE
-app.get('/reddit', function(req, res){
+app.get('/top_ama', function(req, res){
 
   console.log("Requesting data from reddit...")
   request.get({
@@ -36,7 +36,7 @@ app.get('/reddit', function(req, res){
 })
 
 // GIPHY "proxy" EXAMPLE
-app.get('/giphy', function(req, res){
+app.get('/top_gif', function(req, res){
   
   console.log("Requesting data from giphy...")
   request.get({
@@ -66,8 +66,8 @@ app.get('/giphy', function(req, res){
 app.get('/',function(req,res){
   res.send(
     "<h1>Backend API integrations are fun!</h1>" +
-    "<a href='/giphy'>giphy</a> | " +
-    "<a href='/reddit'>reddit</a>"
+    "<a href='/top_gif'>What's the top gif on Giphy?</a> | " +
+    "<a href='/top_ama'>Is there an AMA on Reddit's front page?</a>"
   );
 })
 
